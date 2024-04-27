@@ -48,13 +48,14 @@ export default function ActionPanel() {
           data?.map((card, index) => (
             <div key={card.id} className="mt-5">
               <div className="rounded-md bg-gray-50 px-6 py-5 sm:flex sm:items-start sm:justify-between">
-                <h4 className="sr-only">{card.format_of_training.name}</h4>
+                <h4 className="sr-only" >{card.format_of_training.name}</h4>
                 <div className="sm:flex sm:items-start">
-                  <div className="rounded-md bg-black/55 px-2.5 py-1.5 text-sm font-semibold text-white shadow-sm">
+                  <div className="rounded-md bg-cyan-500 px-2.5 py-1.5 text-sm font-semibold text-white shadow-sm">
                     <h3 className="text-base font-semibold leading-6 text-white">{card.format_of_training.name}</h3>
                   </div>
                   <div className="mt-3 sm:ml-4 sm:mt-0">
-                    <div className="text-sm font-medium text-gray-900">{card.hours_logged}</div>
+                    <div className="text-sm font-medium text-gray-900">Activity Title: {card.title}</div>
+                    <div className="text-sm font-medium text-gray-900">Activity Loged Hours: {card.hours_logged}</div>
                     <div className="mt-1 text-sm text-gray-600 sm:flex sm:items-center">
                       <div>{card.date_completed}</div>
                       <span className="hidden sm:mx-2 sm:inline" aria-hidden="true">&middot;</span>

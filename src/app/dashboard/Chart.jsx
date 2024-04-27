@@ -67,7 +67,7 @@ export default function CPDChart() {
       dataLabels: {
         enabled: false,
       },
-      colors: ["#020617"],
+      colors: ["#32CBFF"],
       stroke: {
         lineCap: "round",
         curve: "smooth",
